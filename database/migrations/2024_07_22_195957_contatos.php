@@ -17,7 +17,15 @@ return new class extends Migration
             $table->string("cep");
             $table->string("whatsapp");
             $table->timestamps();
+
+
+            $table->unsignedBigInteger("id_user");
+            $table->foreign("id_user")->references("id")->on("users")->onDelete("cascade")->onUpdate("cascade");
+       
         });
+
+        
+       
     }
 
     /**
