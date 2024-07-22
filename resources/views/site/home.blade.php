@@ -3,5 +3,14 @@
 @section("title", "Essa é a nossa Home")
 
 @section('conteudo')
-    <h1> Essa é a nossa home <h1>
+
+{{-- Isso é um comentário! --}}
+
+{{-- isset($nome) ? "existe" : "Não existe" --}}
+@if($nome =="Rodrigo")
+true
+@else
+false
+@endif
+
 @endsection
