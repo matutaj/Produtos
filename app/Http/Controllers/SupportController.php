@@ -8,7 +8,9 @@ class SupportController extends Controller
 {
     //
     public function index(){
+        $nome = "Matuta Jorge";
+        $idade = 10;
     
-        return "Hello World";
+        return  view("site.home");
     } 
 }
